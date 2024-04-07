@@ -19,5 +19,5 @@
 
 # Extras
 
-- <a href="https://john-enes.github.io/CyberMind/"> CLICK TO OPEN!</a>
+- <a href="https://john-enes.github.io/CyberMind/" target="_blank"> CLICK TO OPEN!</a>
 - Developed completely in Portuguse, Brazil
