@@ -1,18 +1,33 @@
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0
+    font-family: Verdana, 'Times New Roman', Tahoma, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    
 }
 
 body{
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right, #8400ff, #2600ff)
+    background-color: #0a0909;
 }
 
 #container{
     height: auto;
     width: auto;
+}
+
+.interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+   
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    position: sticky;
+
 }
 
 
@@ -22,6 +37,7 @@ h1{
     margin-right: auto;
     font-size: 2.2em;
     padding-left: 70px;
+    
 }
 
 nav{
@@ -34,38 +50,65 @@ nav{
 
 li{
     font-size: 0.9em;
-    margin-right: 20px;
+    
     
 }
 
 ul{
     display: flex;
     list-style: none;
-    
+    gap: 2rem;
     }
 
 #lista{
-    margin-right: 20px;
-    width: 500px;
+    width: 700px;
     height: 50px;
     font-size: 1.2em;
-    
 }
 
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000; 
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FFBF31;
+}
+
+
+
 /* Conteudo principal */
-
-
-img{
+.imagemprincipal{
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-10%, -30%);
     width: 600px;
-    margin-left: 80px;
+    margin-left: 100px;
     
 }
 
-#titulo2{
+@keyframes mover-cima-baixo {
+    0% {
+        transform: translateY(0); /* Sem movimento */
+    }
+    50% {
+        transform: translateY(-15px); /* Movimento para cima */
+    }
+    100% {
+        transform: translateY(0); /* Movimento para baixo */
+    }
+}
+
+.imagemprincipal {
+    animation: mover-cima-baixo 2s ease-in-out infinite; 
+}
+
+#textoprincipal{
     color: white;
     padding: 350px 0  0 250px;
 }
@@ -77,5 +120,110 @@ span{
 }
 
 p{
-    font-size: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.5;
+} 
+
+/* Paginas */
+
+#servicos{
+    background: linear-gradient(to right, #141313, #0a0909);
+    .imagemdois{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-150%, -30%);
+        width: 500px;
+        margin-left: 100px;
+    }
+    .imagemdois{
+        animation: mover-cima-baixo 2s ease-in-out infinite; 
+        
+    }
 }
+#sobre{
+    background: linear-gradient(to right, #141313, #0a0909);
+    .imagemtres{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-150%, -30%);
+        width: 500px;
+        margin-left: 100px;
+        
+    }
+    .imagemtres {
+        animation: mover-cima-baixo 2s ease-in-out infinite; 
+    }
+}
+#contato{
+    background: linear-gradient(to right, #141313, #0a0909);
+    .imagemquatro{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-150%, -30%);
+        width: 700px;
+        
+    }
+    .imagemquatro {
+        animation: mover-cima-baixo 2s ease-in-out infinite; 
+        
+    }
+}
+
+
+
+footer{
+    height: 100px;
+    background-color: white;
+}
+
+/* Botão seta para cima */
+#btn-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#btn-topo:hover {
+    color: #FFBF31;
+}
+
+
+
+
+
+
+/* Barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 10px; /* largura da barra */
+  }
+  
+  /* Estilos do trilho */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* cor de fundo */
+  }
+  
+  /* Estilos do botão do indicador */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* cor do indicador */
+    border-radius: 5px; /* borda do indicador */
+  }
+  
+  /* Estilos do botão do indicador quando houver hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* cor do indicador em hover */
+  }
