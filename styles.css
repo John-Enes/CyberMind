@@ -48,13 +48,13 @@ nav{
     
 }
 
-li{
+#linav{
     font-size: 0.9em;
     
     
 }
 
-ul{
+#ulnav{
     display: flex;
     list-style: none;
     gap: 2rem;
@@ -81,8 +81,8 @@ a:hover{
 
 
 
-/* Conteudo principal */
-.imagemprincipal{
+/* Conteudo */
+#imagemprincipal{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -104,7 +104,7 @@ a:hover{
     }
 }
 
-.imagemprincipal {
+#imagemprincipal {
     animation: mover-cima-baixo 2s ease-in-out infinite; 
 }
 
@@ -124,59 +124,61 @@ p{
     line-height: 1.5;
 } 
 
+.textodescricao{
+    line-height: 2;
+    padding: 200px 0 0 250px;
+    color: white;
+}
+
+
 /* Paginas */
 
-#servicos{
-    background: linear-gradient(to right, #141313, #0a0909);
-    .imagemdois{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-150%, -30%);
-        width: 500px;
-        margin-left: 100px;
-    }
-    .imagemdois{
-        animation: mover-cima-baixo 2s ease-in-out infinite; 
-        
-    }
-}
-#sobre{
-    background: linear-gradient(to right, #141313, #0a0909);
-    .imagemtres{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-150%, -30%);
-        width: 500px;
-        margin-left: 100px;
-        
-    }
-    .imagemtres {
-        animation: mover-cima-baixo 2s ease-in-out infinite; 
-    }
-}
-#contato{
-    background: linear-gradient(to right, #141313, #0a0909);
-    .imagemquatro{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-150%, -30%);
-        width: 700px;
-        
-    }
-    .imagemquatro {
-        animation: mover-cima-baixo 2s ease-in-out infinite; 
-        
-    }
+#servicos .imagem {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(10%, -10%);
+    width: 500px;
+    margin-left: 100px;
 }
 
+#sobre .imagem {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(10%, -10%);
+    width: 500px;
+    margin-left: 100px;
+}
+
+#contato .imagem {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(10%, -10%);
+    width: 700px;
+}
 
 
 footer{
-    height: 100px;
+    height: 170px;
     background-color: white;
+}
+
+#sociais{
+    width: 200px;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+#lifooter{
+    list-style: square;
+    line-height: 2;
+    width: auto;
+}
+
+#ulfooter{
+    width: auto
 }
 
 /* Botão seta para cima */
@@ -205,7 +207,6 @@ footer{
 
 
 
-
 /* Barra de rolagem */
 
 ::-webkit-scrollbar {
@@ -227,3 +228,328 @@ footer{
   ::-webkit-scrollbar-thumb:hover {
     background: #555; /* cor do indicador em hover */
   }
+
+
+
+
+ @media screen and  (max-width: 1800px)  {
+    #textoprincipal{
+        font-size: 1em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+    }
+    #imagemprincipal{
+        width: 600px;
+        margin-left: 50px;
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 450px;
+    }
+    #contato .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 600px;
+    }
+}
+
+@media screen and  (max-width: 1330px)  {
+    #textoprincipal{
+        font-size: 1em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+        font-size: 1em;
+    }
+    #imagemprincipal{
+        width: 500px;
+        margin-left: 100px;
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 450px;
+    }
+    #contato .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 550px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and  (max-width: 1280px)  {
+    #textoprincipal{
+        font-size: 0.9em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+        font-size: 1em;
+    }
+    #imagemprincipal{
+        width: 450px;
+        margin-left: px;
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 400px;
+    }
+    #contato .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 500px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and  (max-width: 1129px)  {
+    #textoprincipal{
+        font-size: 1em;
+        padding: 300px 0 0 20px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 20px;
+        font-size: 1.2em;
+    }
+    #imagemprincipal{
+        top: 55%;
+        left: 0;
+        transform: translate(10%, -10%);
+        width: 500px;
+        margin-left: 0px;;
+        padding-left: 50px;
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 75%;
+        left: 0;
+        transform: translate(10%, -10%);
+        width: 400px;
+        margin-left: 0px;;
+    }
+    #contato .imagem{
+        top: 70%;
+        left: 0;
+        transform: translate(10%, -10%);
+        width: 400px;
+        margin-left: 0px;
+    }
+}
+
+
+
+ @media screen and  (max-width: 632px)  {
+    #textoprincipal{
+        font-size: 0.7em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+        font-size: 1em;
+    }
+    #imagemprincipal{
+        display: none;
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        display: none;
+    }
+    #contato .imagem{
+        display: none;
+    }
+    h1{
+        display: none;
+    }
+
+
+
+    #linav{
+        font-size: 0.9em;
+        
+        
+    }
+    
+    #ulnav{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        }
+    
+    #lista{
+        width: 100vh;
+        height: 50px;
+        font-size: 1em;
+    }
+
+} 
+
+
+
+/* @media screen and (max-width: 1830px) and (min-width: 1550px)  {
+    #textoprincipal{
+        font-size: 1em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+    }
+    #imagemprincipal{
+        width: 600px;
+        margin-left: 50px;
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 450px;
+    }
+    #contato .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 700px;
+    }
+}
+
+
+@media screen and (max-width: 1550px) and (min-width: 1415px) {
+    #textoprincipal{
+        font-size: 1em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+        font-size: 1.2em;
+    }
+    #imagemprincipal{
+        width: 550px;
+        
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 450px;
+    }
+    #contato .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(0%, -10%);
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1417px) and (min-width: 1330px)  {
+    #textoprincipal{
+        font-size: 1em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+        font-size: 0.8em;
+    }
+    #imagemprincipal{
+        width: 500px;
+        
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 450px;
+    }
+    #contato .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 600px;
+        
+    }
+}
+@media screen and (max-width: 1330px) and (min-width: 1200px)  {
+    #textoprincipal{
+        font-size: 1em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+        font-size: 1em;
+    }
+    #imagemprincipal{
+        width: 500px;
+        
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 400px;
+    }
+    #contato .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(0%, -10%);
+        width: 600px;
+        
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 1200px)  {
+    #textoprincipal{
+        font-size: 1em;
+        padding: 300px 0 0 30px;
+        
+    }
+    .textodescricao{
+        padding: 150px 0 0 30px;
+        font-size: 1em;
+    }
+    #imagemprincipal{
+        width: 500px;
+        
+    }
+    #servicos .imagem,
+    #sobre .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(10%, -10%);
+        width: 400px;
+    }
+    #contato .imagem{
+        top: 20%;
+        left: 50%;
+        transform: translate(0%, -10%);
+        width: 600px;
+        
+    }
+}
+ */

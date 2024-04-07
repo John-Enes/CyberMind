@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="img/3910612.png" type="image/x-icon">
     <title>Cyber Mind</title>
 </head>
 <body>
@@ -13,11 +15,11 @@
                 <nav>
                    <h1>Cyber Mind</h1>
                     <div id="lista">
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#servicos">Nossos Serviços</a></li>
-                            <li><a href="#sobre">Sobre nós</a></li>
-                            <li><a href="#contato">Contate-nos</a></li>
+                        <ul id="ulnav">
+                            <li id="linav"><a href="#home">Home</a></li>
+                            <li id="linav"><a href="#servicos">Nossos Serviços</a></li>
+                            <li id="linav"><a href="#sobre">Sobre nós</a></li>
+                            <li id="linav"><a href="#contato">Contate-nos</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -33,37 +35,58 @@
                             </p>
 
                         
-                        <img  class="imagemprincipal" src="img/fotoprincipal.png" alt="">
+                        <img  id="imagemprincipal" class="imagem" src="img/fotoprincipal.png" alt="">
                     </div>
                 </div>
             </section>
 
-            <section id="servicos">
-
+            <section class="headline" id="servicos" >
                 <div id="textosecundario">
-                    <p class="textodescricao">
-                    
-                    </p>
-                    <img class="imagemdois" src="img/fotosecundaria.png" alt="">
+                    <p class="textodescricao"> <span>Nossos Serivços:</span><br>A Cybermind é uma empresa especializada em segurança cibernética<br> fornecendo soluções abrangentes para proteger <br>organizações contra ameaças digitais. <br>Nossa atuação engloba serviços de consultoria em segurança, <br>testes de penetração, gerenciamento de identidade e acesso, <br> monitoramento de ameaças e resposta a incidentes. <br>
+                    Estamos comprometidos em proteger seus dados e sistemas,<br>garantindo sua tranquilidade e segurança online. <br>Confie na Cybermind para proteger o seu mundo digital.
+                    <img id="imagemdois" class="imagem" src="img/fotosecundaria.png" alt="">
                 </div>
-                
             </section>
 
-            <section id="sobre">
-                <img class="imagemtres" src="img/fototres.webp" alt="">
+            <section class="headline" id="sobre">
+                <div id="textosecundario">
+                    <p class="textodescricao"> <span>Área de Atuação:</span> <br>Na Cybermind, estamos comprometidos em proteger <br> o que é mais importante para você: seus dados, <br>ua privacidade e sua segurança cibernética. <br>Como especialistas em segurança cibernética, <br> nossa empresa se destaca no fornecimento de soluções <br>abrangentes para enfrentar os desafios digitais <br>
+                    em um mundo conectado. Desde consultoria em segurança <br>até resposta a incidentes, nossa equipe está preparada <br>para proteger sua empresa contra ameaças cibernéticas, <br> garantindo sua tranquilidade e sucesso contínuo. <br>Confie na Cybermind para estar na vanguarda da defesa cibernética.</p>
+                        <img id="imagemtres" class="imagem" src="img/fototres.webp" alt="">
+                </div>
             </section>
                 
-            <section id="contato">
-                <img class="imagemquatro" src="img/fotoquatro.png" alt="">
+            <section class="headline" id="contato">
+                <div id="textosecundario">
+                    <p class="textodescricao"><span>Contate-nos:</span><br>Entre em contato conosco para proteger sua empresa contra ameaças cibernéticas. <br>Estamos aqui para fornecer soluções personalizadas e suporte <br>especializado em segurança cibernética. <br>Envie-nos uma mensagem ou ligue para nós e vamos trabalhar juntos <br>para fortalecer suas defesas digitais.<br> Sua segurança é nossa prioridade na Cybermind.<br>
+
+                        <span>
+                            Contato: (xx) xxxx-xxxx<br>
+                            Endereço: R. xxx n° xxx<br>
+                            Email: xxxxxxxx@gmail.com<br>
+                        </span>
+                    </p>
+                    
+                </div>
+                <img id="imagemquatro" class="imagem" src="img/fotoquatro.png" alt="">
             </section>
             
             <a href="#" id="btn-topo"><i class="fas fa-arrow-up"></i></a>
 
-            <footer>
-                Teste
+            <footer >
+                <ul id="ulfooter">
+                    <li id="lifooter"><strong>Contato:</strong> (xx) xxxx-xxxx</li>
+                    <li id="lifooter">Endereço: R. xxx n° xxx</li>
+                    <li id="lifooter">Email: xxxxxxxx@gmail.com</li></a>
+                    <li id="lifooter">Site não comercial, feito para estudos</li>
+                </ul>
+                <div id="sociais">
+                    <a href="https://github.com/John-Enes" target="_blank"><i  class="fa-brands fa-square-github"> </i></a>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-enes-a7115b259/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </footer>
         </div>
-        
+        <script src="https://unpkg.com/scrollreveal"></script>
         <script src="index.js"></script>
 </body>
 </html>
